@@ -6,7 +6,8 @@ services:
       dockerfile: Dockerfile
     image: yihong524/django:v1
     ports:
-    - 8000:8000    # 如果不想开放这个端口到外面，就写成 - 8000
+    # - 8000:8000    # 如果不想开放这个端口到外面，就写成 - 8000
+      - 8000
     volumes:
       - "static:/src/app/statics"
   nginx:
